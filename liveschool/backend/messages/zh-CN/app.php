@@ -72,6 +72,10 @@ return [
     'Post' => '文章',
     'Comment' => '评论',
     'Tag' => '标签',
+'LiveCamera'=>'摄像机',
+'LiveClassroom'=>'直播教室',
+'LiveCourse'=>'直播课程',
+'CourseStuff'=>'教学材料',
 
 
 ];
