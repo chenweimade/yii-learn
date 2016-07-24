@@ -17,7 +17,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "funson86/yii2-gii": "dev-master",
-        "funson86/yii2-setting": "*"
+        "funson86/yii2-setting": "*",
+        "funson86/yii2-blog": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

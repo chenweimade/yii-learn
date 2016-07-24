@@ -15,24 +15,9 @@ echo Menu::widget(
             ],
             [
                 'label' => Yii::t('app', 'Settings'),
-                'url' => ['#'],
+                'url' => ['/setting'],
                 'icon' => 'fa fa-spinner',
-                'options' => [
-                    'class' => 'treeview',
-                ],
-                'visible' => Yii::$app->user->can('readPost'),
-                'items' => [
-                    [
-                        'label' => Yii::t('app', 'Basic'),
-                        'url' => ['/basic/index'],
-                        'icon' => 'fa fa-user',
-                    ],
-                    [
-                        'label' => Yii::t('app', 'Advanced'),
-                        'url' => ['/advanced/index'],
-                        'icon' => 'fa fa-lock',
-                    ],
-                ],
+                'active' => Yii::$app->request->url === "/setting" 
             ],
             [
                 'label' => Yii::t('app', 'System'),
@@ -51,6 +36,36 @@ echo Menu::widget(
                     [
                         'label' => Yii::t('app', 'Role'),
                         'url' => ['/role/index'],
+                        'icon' => 'fa fa-lock',
+                    ],
+                ],
+            ],
+	    [
+                'label' => Yii::t('app', 'Blog'),
+                'url' => ['#'],
+                'icon' => 'fa fa-cog',
+                'options' => [
+                    'class' => 'treeview',
+                ],
+                'items' => [
+                    [
+                        'label' => Yii::t('app', 'Catalog'),
+                        'url' => ['/blog/blog-catalog'],
+                        'icon' => 'fa fa-user',
+                    ],
+                    [
+                        'label' => Yii::t('app', 'Post'),
+                        'url' => ['/blog/blog-post'],
+                        'icon' => 'fa fa-lock',
+                    ],
+		    [
+                        'label' => Yii::t('app', 'Comment'),
+                        'url' => ['/blog/blog-comment'],
+                        'icon' => 'fa fa-user',
+                    ],
+                    [
+                        'label' => Yii::t('app', 'Tag'),
+                        'url' => ['/blog/blog-tag'],
                         'icon' => 'fa fa-lock',
                     ],
                 ],
