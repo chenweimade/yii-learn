@@ -30,13 +30,13 @@ echo Menu::widget(
                     [
                         'label' => Yii::t('app', 'User'),
                         'url' => ['/user/index'],
-                        'icon' => 'fa fa-user',
+                        'icon' => 'fa fa-cog',
                         //'visible' => (Yii::$app->user->identity->username == 'admin'),
                     ],
                     [
                         'label' => Yii::t('app', 'Role'),
                         'url' => ['/role/index'],
-                        'icon' => 'fa fa-lock',
+                        'icon' => 'fa fa-cog',
                     ],
                 ],
             ],
@@ -51,22 +51,22 @@ echo Menu::widget(
                     [
                         'label' => Yii::t('app', 'Catalog'),
                         'url' => ['/blog/blog-catalog'],
-                        'icon' => 'fa fa-user',
+                        'icon' => 'fa fa-cog',
                     ],
                     [
                         'label' => Yii::t('app', 'Post'),
                         'url' => ['/blog/blog-post'],
-                        'icon' => 'fa fa-lock',
+                        'icon' => 'fa fa-cog',
                     ],
 		    [
                         'label' => Yii::t('app', 'Comment'),
                         'url' => ['/blog/blog-comment'],
-                        'icon' => 'fa fa-user',
+                        'icon' => 'fa fa-cog',
                     ],
                     [
                         'label' => Yii::t('app', 'Tag'),
                         'url' => ['/blog/blog-tag'],
-                        'icon' => 'fa fa-lock',
+                        'icon' => 'fa fa-cog',
                     ],
                 ],
             ],
