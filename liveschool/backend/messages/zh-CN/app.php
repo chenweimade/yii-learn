@@ -75,6 +75,8 @@ return [
 'LiveCamera'=>'摄像机',
 'LiveClassroom'=>'直播教室',
 'LiveCourse'=>'直播课程',
+'LiveCourseType'=>'课程分类',
+'LiveCourseAdmin'=>'课程管理',
 'CourseStuff'=>'教学材料',
 
 
